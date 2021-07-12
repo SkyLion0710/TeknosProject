@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "ced834d2-f2e9-4600-beac-fd9fbfa81bd9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Proyecto",
+			"item": [
+				{
+					"name": "Folders Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/paz-8fcb/api/v1/folders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"paz-8fcb",
+								"api",
+								"v1",
+								"folders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Messages Get List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/paz-8fcb/api/v1/messages/important?from=Alice&to=me&subject=Commit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"paz-8fcb",
+								"api",
+								"v1",
+								"messages",
+								"important"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "Alice"
+								},
+								{
+									"key": "to",
+									"value": "me"
+								},
+								{
+									"key": "subject",
+									"value": "Commit"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Messages Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/paz-8fcb/api/v1/messages/important/15459251a6d6b397565",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"paz-8fcb",
+								"api",
+								"v1",
+								"messages",
+								"important",
+								"15459251a6d6b397565"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Messages Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n       \"id_message\": \"1543ee3a5b43e0f9f47\",\r\n       \"from\": 18,\r\n        \"to\": 17,\r\n        \"subject\": \"Commits that need to be pushed lorem ipsum dolor sit amet, consectetur adipiscing elit.\",\r\n        \"message\": \"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lorem diam, pulvinar id nisl non, ultrices maximus nibh. Suspendisse ut justo velit. Nullam ac ultrices risus, quis auctor orci. Vestibulum volutpat nisi et neque porta ullamcorper. Maecenas porttitor porta erat ac suscipit. Sed cursus leo ut elementum fringilla. Maecenas semper viverra erat, vel ullamcorper dui efficitur in. Vestibulum placerat imperdiet tellus, et tincidunt eros posuere eget. Proin sit amet facilisis libero. Nulla eget est ut erat aliquet rhoncus. Quisque ac urna vitae dui hendrerit sollicitudin vel id sem. </p><p> In eget ante sapien. Quisque consequat velit non ante finibus, vel placerat erat ultricies. Aliquam bibendum justo erat, ultrices vehicula dolor elementum a. Mauris eu nisl feugiat ligula molestie eleifend. Aliquam efficitur venenatis velit ac porta. Vivamus vitae pulvinar tellus. Donec odio enim, auctor eget nibh mattis, ultricies dignissim lacus. Phasellus non tincidunt dui. Nulla eu arcu lorem. </p><p> Donec non hendrerit augue, lobortis sollicitudin odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis sit amet euismod enim, eget vestibulum justo. Fusce a placerat lectus, eget feugiat purus. Cras risus ante, faucibus eget justo commodo, volutpat tempor ante. Donec sit amet leo venenatis, gravida quam sit amet, blandit dui. In quam ante, elementum ut faucibus nec, tristique vitae dui. Praesent vel erat at enim placerat luctus vel ut ipsum. In congue tempor mi, non ornare lectus condimentum at. Aenean libero diam, finibus eget sapien et, tristique fermentum lorem. </p>\",\r\n        \"time\": \"28 Jun\",\r\n        \"read\": true,\r\n        \"starred\": false,\r\n        \"important\": true,\r\n        \"hasAttachments\": false\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/paz-8fcb/api/v1/messages/important",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"paz-8fcb",
+								"api",
+								"v1",
+								"messages",
+								"important"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
